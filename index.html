@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav id="navbar">
         <div class="navbar__logo">
             <i class="fab fa-diaspora"></i>
             <a href="#">Emma</a>
@@ -32,7 +32,7 @@
         </ul>    
     </nav>
     <!-- Home -->
-    <section class="home">
+    <section id="home">
         <img src="imgs/Emma.jpeg" alt="Emma's portfolio photo" class="home__avatar" width="300px">
         <h1 class="home__title">Hello!<br> I'm Super king of Javascript, Emma</h1>
         <h2 class="home__description">I'm baby Front-end Engineer<br> who has been building strong foundation thorugh JS<br>
@@ -40,7 +40,7 @@
         <button class="contact">Contact ME</button>
     </section>
     <!-- About -->
-    <section class="about">
+    <section id="about">
         <h1>About Me</h1>
         <p>
             I'm a person who put pretty much values on foundation which is applyed in programming as well<br>
@@ -78,7 +78,7 @@
         </div>
     </section>
     <!-- Skill -->
-    <section class="skills">
+    <section id="skills">
         <h1>Skills</h1>
         <h2>Skill & Attribute</h2>
         <p>
@@ -143,7 +143,7 @@
         </div>
     </section>
     <!-- Work -->
-    <section class="work">
+    <section id="work">
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__catagories">
@@ -158,7 +158,7 @@
                 class="project"
                 target="blank"
                 >
-                <img src="imgs/Carrot Game.png" alt="Carrot Game" width="200">
+                <img class="project__img" src="imgs/Carrot Game.png" alt="Carrot Game" width="200">
                 <div class="project__description">
                     <h3>Carrot game</h3>
                     <span>make game using Javascript and Refectoring</span>
@@ -169,7 +169,7 @@
                 class="project"
                 target="blank"
                 >
-                <img src="imgs/jenny.png" alt="Find jenny" width="200">
+                <img class="project__img" src="imgs/jenny.png" alt="Find jenny" width="200">
                 <div class="project__description">
                     <h3>Find jenny!</h3>
                     <span>using window size which is important in Front-end,
@@ -182,7 +182,7 @@
                 class="project"
                 target="blank"
                 >
-                <img src="imgs/shoppingmall.png" alt="shoppingmall" width="200">
+                <img class="project__img" src="imgs/shoppingmall.png" alt="shoppingmall" width="200">
                 <div class="project__description">
                     <h3>Shopping clothes</h3>
                     <span>saving data for clothes in JSON</span>
@@ -193,7 +193,7 @@
             class="project"
             target="blank"
             >
-            <img src="imgs/PuzzleGame.png" alt="Puzzle" width="200">
+            <img class="project__img" src="imgs/PuzzleGame.png" alt="Puzzle" width="200">
             <div class="project__description">
                 <h3>Puzzle game</h3>
                 <span>using dragevent and relationships of Parent,child,sibilings</span>
@@ -204,7 +204,7 @@
         class="project"
         target="blank"
         >
-        <img src="imgs/TodoList.png" alt="TodoList" width="200">
+        <img class="project__img" src="imgs/TodoList.png" alt="TodoList" width="200">
         <div class="project__description">
             <h3>TodoList</h3>
             <span>make Element at onve in Javascript using string template instead of creating each elements</span>
@@ -213,7 +213,28 @@
         </div>
     </section>
     <!-- Testimonials -->
-    <section class="testimonials"></section>
+    <section id="testimonials">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonial">
+            <img src="imgs/people1.jpg" 
+                 alt="teacher" 
+                 class="testimonial__avartar">
+            <div class="testimonial__speech-bubble">
+                <p>she has a great teamwork and always smile</p>
+                <p class="name"><a href="">hui</a>QT canberra</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+                <p>she has a great teamwork and always smile</p>
+                <p class="name"><a href="">hui</a>QT canberra</p>
+            </div>
+            <img src="imgs/people1.jpg" 
+                 alt="teacher" 
+                 class="testimonial__avartar">
+        </div>
+    </section>
     <!-- Contact -->
     <section class="contact"></section>
 </body>
