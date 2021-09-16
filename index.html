@@ -158,16 +158,17 @@
             <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
-            <button class="category__btn active">All <span class="category__count">8</span></button>
-            <button class="category__btn">HTMl,CSS <span class="category__count">2</span></button>
-            <button class="category__btn">Javascript <span class="category__count">6</span></button>
-            <button class="category__btn">React <span class="category__count">0</span></button>
+            <button data-filter="*" class="category__btn active">All <span class="category__count">8</span></button>
+            <button data-filter="basic" class="category__btn">HTMl,CSS <span class="category__count">2</span></button>
+            <button data-filter="programming" class="category__btn">Javascript <span class="category__count">6</span></button>
+            <button data-filter="framwork" class="category__btn">React <span class="category__count">0</span></button>
         </div>
         <div class="work__projects"> 
             <a 
                 href="https://github.com/sejinniemma/carrot-game--refectoring-.git"
                 class="project"
                 target="blank"
+                data-type="programming"
                 >
                 <img class="project__img" src="imgs/Carrot Game.png" alt="Carrot Game" width="200">
                 <div class="project__description">
@@ -179,6 +180,7 @@
                 href="https://github.com/sejinniemma/Find-Jenny-.git"
                 class="project"
                 target="blank"
+                data-type="programming"
                 >
                 <img class="project__img" src="imgs/jenny.png" alt="Find jenny" width="200">
                 <div class="project__description">
@@ -190,6 +192,7 @@
                 href="https://github.com/sejinniemma/shopping-mall.git"
                 class="project"
                 target="blank"
+                data-type="programming"
                 >
                 <img class="project__img" src="imgs/shoppingmall.png" alt="shoppingmall" width="200">
                 <div class="project__description">
@@ -201,6 +204,7 @@
             href="https://github.com/sejinniemma/Puzzle-game.git"
             class="project"
             target="blank"
+            data-type="programming"
             >
             <img class="project__img" src="imgs/PuzzleGame.png" alt="Puzzle" width="200">
             <div class="project__description">
@@ -212,6 +216,7 @@
         href="https://github.com/sejinniemma/English-word-note.git"
         class="project"
         target="blank"
+        data-type="basic"
         >
         <img class="project__img" src="imgs/TodoList.png" alt="TodoList" width="200">
         <div class="project__description">

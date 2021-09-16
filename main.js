@@ -53,8 +53,31 @@ arrowUp.addEventListener('click',() => scrollIntoView('#home'))
 
 
 //scrollIntoView function
-
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
 }
+
+// Projects
+const workBtnContainer = document.querySelector('.work__categories');
+const projects = document.querySelectorAll('.project');
+const result = Array.from(projects)
+workBtnContainer.addEventListener('click',(e)=>{
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+
+    if(filter == null){
+     return;
+    }
+
+      projects.forEach(project=> {
+          const type = project.dataset.type;
+   
+          if(filter === '*' || filter === type){
+              project.classList.remove('invisible')
+          }else{
+              project.classList.add('invisible')
+          }
+      })
+
+})
+
