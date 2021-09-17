@@ -60,8 +60,10 @@ function scrollIntoView(selector) {
 
 // Projects
 const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
-const result = Array.from(projects)
+
+
 workBtnContainer.addEventListener('click',(e)=>{
     const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
 
@@ -69,15 +71,19 @@ workBtnContainer.addEventListener('click',(e)=>{
      return;
     }
 
-      projects.forEach(project=> {
-          const type = project.dataset.type;
-   
-          if(filter === '*' || filter === type){
-              project.classList.remove('invisible')
-          }else{
-              project.classList.add('invisible')
-          }
-      })
+    projectContainer.classList.add('anim-out');
+    setTimeout(()=>{
+        projects.forEach(project=> {
+            const type = project.dataset.type
+               if(filter === '*' || filter === type){
+                project.classList.remove('invisible')
+            }else{
+                project.classList.add('invisible')
+            }
+        })
 
+        projectContainer.classList.remove('anim-out');
+    },300)
+   
 })
 
