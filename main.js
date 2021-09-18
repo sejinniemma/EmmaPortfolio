@@ -22,7 +22,7 @@ const navbarMenuItem = document.querySelector('.navbar__menu__item');
             return;
         }
         navbarMenu.classList.remove('open');
-        scrollIntoView(link)
+        scrollIntoView(link);
     })
 
     // Navbar toggle button for small screen
@@ -102,5 +102,21 @@ workBtnContainer.addEventListener('click',(e)=>{
    
 })
 
-//
+//when scroll event evoke, active navbar menu items (Inersection Observer😆)
+
+//1. make new array for sections and navbar menu items with sectionIds
+
+const sectionIds = [
+    '#home',
+    '#about',
+    '#skill',
+    '#work',
+    '#testimonials',
+    '#contact',
+]
+
+const sections = sectionIds.map(id => document.querySelector(id));
+const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
+
+console.log(sections,navItems);
 
