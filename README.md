@@ -77,3 +77,17 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - It means some sections are paged out.
 - so I gave condition (intersectionRatio > 0)
 
+### 3. When scrolling, excute intersection observer
+
+<img width="965" alt="스크린샷 2021-09-19 오후 9 36 05" src="https://user-images.githubusercontent.com/80943394/133927804-771d419a-93d6-4f84-a7f2-423251b78231.png">
+
+### bug💥
+## 1.wheel event
+- scrollIntoview event is working when scrolling.
+- so whenver scrollIntoview events,selectNavItems generate. so there is a bug.
+- to avoid this situation, I used 'wheel' event instead of using scroll event.
+- 'wheel' is only working when person make scroll with mouse.
+
+## 2.when window size is different
+- It can happen first section (#home) and the last section(#contact) doesn't go out or come inside within document.It depends on window size.
+- To prevent this,I gave some conditions using window and document properties which is very useful.
