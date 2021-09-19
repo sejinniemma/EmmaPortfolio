@@ -46,6 +46,9 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 3. scroll event generate so frequently.Instead we make layout in the for loop whenever scroll events,I prefer using Intersection Observer API👓
 
 ## Let's use Intersection Observer 🧬
-### 1.SectionIds : make new 'Id' array usin 'MAP' API
-- make sections and navbar menu items as a DOM using sectionIds
+### 1.sectionIds[] : make new 'Id' array usin 'MAP' API
+- make sections and navbar menu items as a DOM element using sectionIds
 - so we can control section and navbar menu more easily
+
+<img width="930" alt="스크린샷 2021-09-19 오후 8 38 50" src="https://user-images.githubusercontent.com/80943394/133926369-093c7645-ada5-4a40-9a82-0c7dcdd3b9e4.png">
+
