@@ -21,20 +21,26 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - then make function scrollIntoview()
 ### bug💥
 - when evoke scrollIntoView event to contactMe button & arrow-up button, navbar menu items wasn't able to be active correctly.
-- so I added function 'selectNavItem()' which is made from 'IntersectionObserver' into function scrollIntoview()
+- (I added selctNavItem(target) only for navbar menu click event but not for contactME & arrow up button😩)
+- so I added function 'selectNavItem()' which is made from 'IntersectionObserver' into function scrollIntoview() so that it works in 'function scrollIntoview' at once.
+
+<img width="569" alt="스크린샷 2021-09-19 오후 8 11 21" src="https://user-images.githubusercontent.com/80943394/133925402-5f4482af-b172-490a-a36b-d95a4fbbaae5.png">
+
 - finally when click navbarmenu,homecontact,arrow up button, navbar menu item was able to be active correctly. 
 
-### Then what is the  function 'selectNavItem()'❓ you can see down below😆
+### Then How it was made function 'selectNavItem(sectionIds..?)'❓ you can see down below😆
 <br>
 
 ## 2.Intersection Observer 🌈⭐️
 ### Function
 - when scrolling window, navbar memu items to be active by noticing some inersection change using 'Intersection observer API'
-### For more great performence I made Intersection observer API
+- For more great performence I made Intersection observer API
 <br>
 
-### Bad for performence example (without intersection observer) 💩
+### Bad performence example (without intersection observer) 💩
 
 <img width="1320" alt="스크린샷 2021-09-19 오후 7 26 06" src="https://user-images.githubusercontent.com/80943394/133924063-70f66e0f-88fd-4bd7-91ad-54a3c200af87.png">
 
-1. 
+1. getboundingClientRect() generate layout even whever scroll events (too bad)
+2. we should avoid heavy things in callback function because we can't do anything until callback is finished.
+3. 3.scroll event generate so frequently.Instead we make layout in the for loop whenever scroll events,I prefer using Intersection Observer API👓
