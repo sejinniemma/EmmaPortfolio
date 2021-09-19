@@ -52,3 +52,16 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 
 <img width="930" alt="스크린샷 2021-09-19 오후 8 38 50" src="https://user-images.githubusercontent.com/80943394/133926369-093c7645-ada5-4a40-9a82-0c7dcdd3b9e4.png">
 
+### 2.make Intersection Observer
+- Intersection observer parameter : callback,options
+- when intersection observer observe sections, I send callback to be active menu items
+- those are possible using entry information.
+
+<img width="803" alt="스크린샷 2021-09-19 오후 8 53 51" src="https://user-images.githubusercontent.com/80943394/133926865-d9fcabb3-9aee-4fd3-8998-f9dfa66045e5.png">
+
+### bug💥
+- As soon as the page loaded 'testimonial' navbar menu items was selected.
+- when I debugged, intersectionRatio : 0.
+- It means some sections are paged out.
+- so I gave condition (intersectionRatio > 0)
+
