@@ -22,3 +22,13 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - finally when click navbarmenu,homecontact,arrow up button, navbar menu item was able to be active correctly. 
 
 ### Then what is the  function 'selectNavItem()'❓ you can see down below😆
+
+
+### 2.Intersection Observer 🌈⭐️
+### Function : when scrolling window, navbar memu items to be active by noticing some inersection change using 'Intersection observer API'
+### For more great performence I made Intersection observer API
+<br>
+
+### Bad for performence example (without intersection observer) 💩
+
+1. 
