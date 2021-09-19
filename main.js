@@ -23,6 +23,7 @@ const navbarMenuItem = document.querySelector('.navbar__menu__item');
         }
         navbarMenu.classList.remove('open');
         scrollIntoView(link);
+        selectNavItem(target);
     })
 
     // Navbar toggle button for small screen
@@ -65,6 +66,7 @@ arrowUp.addEventListener('click',() => scrollIntoView('#home'))
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
+    selectNavItem(navItems[sectionIds.indexOf(selector)]);
 }
 
 // Projects
@@ -112,25 +114,51 @@ const sectionIds = [
     '#skill',
     '#work',
     '#testimonials',
-    '#contact',
+    '#contact'
 ]
 const sections = sectionIds.map(id => document.querySelector(id));
 const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
+                        
+let selectedNavItem = navItems[0];
+let selectedNavIndex = 0;
+
+function selectNavItem (selected){
+    selectedNavItem.classList.remove('active');
+    selectedNavItem = selected;
+    selectedNavItem.classList.add('active'); 
+}
 
 //2. make intersection Observer
-
 const observerOptions = {
     root: null,
     rootMargin: '0px',
     threshold: 0.3,
-}
+};
 
 const observerCallback = (entries, observer) => {
+
     entries.forEach(entry => {
-        console.log(entry.target)
-    })
-}
+        if(!entry.isIntersecting && entry.intersectionRatio > 0){
+            const index = sectionIds.indexOf(`#${entry.target.id}`);
+
+            if(entry.boundingClientRect.y < 0) {
+                selectedNavIndex = index + 1;
+            }else{
+                selectedNavIndex = index - 1;
+            }
+         
+        }
+    });
+};
 
 const observer = new IntersectionObserver(observerCallback,observerOptions);
 sections.forEach(section => observer.observe(section));
 
+window.addEventListener('wheel',()=>{
+    if(window.scrollY === 0){
+        selectedNavIndex = 0;
+    } else if (window.scrollY + window.innerHeight === document.body.clientHeight){
+        selectedNavIndex = navItems.length - 1;
+    }
+    selectNavItem(navItems[selectedNavIndex]);
+})
