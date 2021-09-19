@@ -37,10 +37,15 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - For more great performence I made Intersection observer API
 <br>
 
-### Bad performence example (without intersection observer) 💩
+### ex) Bad performence without intersection observer❌ 💩
 
 <img width="1320" alt="스크린샷 2021-09-19 오후 7 26 06" src="https://user-images.githubusercontent.com/80943394/133924063-70f66e0f-88fd-4bd7-91ad-54a3c200af87.png">
 
 1. getboundingClientRect() generate layout even whever scroll events (too bad)
 2. we should avoid heavy things in callback function because we can't do anything until callback is finished.
-3. 3.scroll event generate so frequently.Instead we make layout in the for loop whenever scroll events,I prefer using Intersection Observer API👓
+3. scroll event generate so frequently.Instead we make layout in the for loop whenever scroll events,I prefer using Intersection Observer API👓
+
+## Let's use Intersection Observer 🧬
+### 1.SectionIds : make new 'Id' array usin 'MAP' API
+- make sections and navbar menu items as a DOM using sectionIds
+- so we can control section and navbar menu more easily
