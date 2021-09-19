@@ -18,9 +18,7 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - Make function scrollIntoview()
 ### bug💥
 - when evoke scrollIntoView event, navbar menu items(border) wasn't able to be active correctly.
-- since I made another scroll event(InterSectionObserver).
-- when evoke scrollIntoView, another scroll event also works 
 - so I added function 'selectNavItem()' which is made from 'IntersectionObserver' into function scrollIntoview()
-- finally when click navbarmenu,homecontact,arrow up button, navbar menu was able to be active correctly. 
+- finally when click navbarmenu,homecontact,arrow up button, navbar menu item was able to be active correctly. 
 
 ### Then what is the  function 'selectNavItem()'❓ you can see down below😆
