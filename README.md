@@ -56,8 +56,16 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - Intersection observer parameter : callback,options
 - when intersection observer observe sections, I send callback to be active menu items
 - those are possible using entry information.
+<br>
 
-<img width="803" alt="스크린샷 2021-09-19 오후 8 53 51" src="https://user-images.githubusercontent.com/80943394/133926865-d9fcabb3-9aee-4fd3-8998-f9dfa66045e5.png">
+### selectNavItem
+- be active current navbar menu item and remove active class to the previous one seleted.
+- so we sholud remember previous one make new variable.
+- this is a function I mentioned before.
+- we can use this function very useful.
+- for navbar menu,contact,arrow-up, and scroll event
+
+<img width="803" alt="스크린샷 2021-09-19 오후 8 53 51" src="https://user-images.githubusercontent.com/80943394/133927238-0d32cee4-8620-4aa0-98d8-19fb14e5c88f.png">
 
 ### bug💥
 - As soon as the page loaded 'testimonial' navbar menu items was selected.
