@@ -88,8 +88,8 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - 'wheel' is only working when person make scroll with mouse.
 
 ### 2).when window size is different
-- It can happen first section (#home) and the last section(#contact) doesn't go out or come inside within document.It depends on window size.
-- To prevent this,I gave some conditions using window and document properties which is very useful.
+- It can happen first section (#home) and the last section(#contact) dosen't come in or out on document.It depends on window size.
+- To prevent this,I gave some conditions.
 
 ## 3.Filter project
 ### Function
