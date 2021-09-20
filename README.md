@@ -105,5 +105,7 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - when debug category__count, It is undifined.
 - we can solve this problem through their parentNode
 
+<img width="1206" alt="스크린샷 2021-09-20 오후 4 54 42" src="https://user-images.githubusercontent.com/80943394/133971619-01541216-c7cf-48f3-a1f4-b91053758bd4.png">
+
 <img width="1206" alt="스크린샷 2021-09-20 오후 4 45 20" src="https://user-images.githubusercontent.com/80943394/133971097-f5038a2c-45ca-4095-ba16-4edbd7b463fc.png">
 
