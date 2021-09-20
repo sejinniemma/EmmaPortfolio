@@ -71,9 +71,9 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - so we should remember previous one by making new variable.
 
 ### bug💥
-- As soon as the page loaded 'testimonial' navbar menu items was selected.
-- when I debugged, intersectionRatio : 0.
-- It means some sections are paged out.
+- As soon as the page loaded 'testimonial' navbar menu item was selected.
+- when I debugged, intersectionRatio was zero.
+- It means some sections are paged out as soon as page loaded.
 - so I gave condition (intersectionRatio > 0)
 
 ### 3. When scrolling, excute intersection observer
