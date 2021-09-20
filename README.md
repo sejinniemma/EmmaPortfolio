@@ -82,12 +82,26 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 <img width="965" alt="스크린샷 2021-09-19 오후 9 36 05" src="https://user-images.githubusercontent.com/80943394/133927804-771d419a-93d6-4f84-a7f2-423251b78231.png">
 
 ### bug💥
-### 1.wheel event
+### 1).wheel event
 - scrollIntoview event is working when scrolling.
 - so whenver scrollIntoview events,selectNavItems generate. so there is a bug.
 - to avoid this situation, I used 'wheel' event instead of using scroll event.
 - 'wheel' is only working when person make scroll with mouse.
 
-### 2.when window size is different
+### 2).when window size is different
 - It can happen first section (#home) and the last section(#contact) doesn't go out or come inside within document.It depends on window size.
 - To prevent this,I gave some conditions using window and document properties which is very useful.
+
+## 3.Filter project
+### Function
+- when click category btn, they are filtered.
+- make data information in html and filter.
+- add 'selected' class current target button, and remove previous one
+
+<img width="965" alt="스크린샷 2021-09-20 오후 4 14 43" src="https://user-images.githubusercontent.com/80943394/133968989-aad9215f-0033-4b4b-a6d3-7a8f94b8a294.png">
+
+### bug💥
+- when click 'category__count' they don't work since category count has no data information
+- when debug category__count, It is undifined.
+- we can solve this problem through their parentNode
+
