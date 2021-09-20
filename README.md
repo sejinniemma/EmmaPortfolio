@@ -82,9 +82,9 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 
 ### bug💥
 ### 1).wheel event
-- scrollIntoview event is working when scrolling.
-- so whenver scrollIntoview events,selectNavItems generate. so there is a bug.
-- to avoid this situation, I used 'wheel' event instead of using scroll event.
+- scroll event is working when scrolling.
+- It means when we click navbar menu,there is 'scrollIntoview events',so scroll event is also working.
+- To avoid this situation, I used 'wheel' event instead of using scroll event.
 - 'wheel' is only working when person make scroll with mouse.
 
 ### 2).when window size is different
