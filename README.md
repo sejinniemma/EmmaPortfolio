@@ -3,7 +3,7 @@
 # 🤹🏻 Introduce 🤹🏻‍♀️
 <br>
 
-- My unique website that shows who I am and my ability I have as a front-end engineer 
+- My unique website that shows who I am and my ability as a junior front-end engineer 
 <br>
 
 https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-a305-c06399dfc9c2.mov
@@ -21,7 +21,9 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - then make function scrollIntoview()
 ### bug💥
 - when click contactMe & arrow-up button, I found out navbar menu items wasn't able to be active.
+- because I added 'function selectNavItem' only when navbar menu item click.
 - so I added function 'selectNavItem()' into function scrollIntoview() so that it works at once when scrollIntoview event.
+- function selecNavItem : when move to certain section,correspond to certain navbar menu item has a white border 
 
 <img width="569" alt="스크린샷 2021-09-19 오후 8 11 21" src="https://user-images.githubusercontent.com/80943394/133925402-5f4482af-b172-490a-a36b-d95a4fbbaae5.png">
 
