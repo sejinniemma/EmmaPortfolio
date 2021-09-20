@@ -27,9 +27,9 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 
 <img width="569" alt="스크린샷 2021-09-19 오후 8 11 21" src="https://user-images.githubusercontent.com/80943394/133925402-5f4482af-b172-490a-a36b-d95a4fbbaae5.png">
 
-- finally when click navbarmenu,homecontact,arrow up button, navbar menu item was able to be active correctly. 
+- finally when click navbarmenu,homecontact,arrow up button, 'navbar menu item' was able to be active correctly. 
 
-### Then How it was made function 'selectNavItem(sectionIds..?)'❓ you can see down below😆
+
 <br>
 
 ## 2.Intersection Observer 🌈⭐️
