@@ -63,6 +63,7 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 
 - since we made sections and navbar menu through sectionIds,
 - so we can find current element through 'entry.target.id' of sectionIds 
+- they have same index.(map API)
 <br>
 
 ### selectNavItem
