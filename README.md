@@ -61,8 +61,8 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 
 <img width="803" alt="스크린샷 2021-09-19 오후 8 53 51" src="https://user-images.githubusercontent.com/80943394/133927238-0d32cee4-8620-4aa0-98d8-19fb14e5c88f.png">
 
-- index : since we made sections and navbar menu using sectionIds using map
-- so they can find current element through 'entry.target.id' 
+- since we made sections and navbar menu through sectionIds,
+- so we can find current element through 'entry.target.id' of sectionIds 
 <br>
 
 ### selectNavItem
