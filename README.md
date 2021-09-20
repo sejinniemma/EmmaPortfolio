@@ -8,6 +8,10 @@
 
 https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-a305-c06399dfc9c2.mov
 
+### responsive website 🥰
+
+https://user-images.githubusercontent.com/80943394/133980158-72c5630d-6203-416c-a245-df1ce59bc95e.mov
+
 # 🔸 Main function 🔸
 
 ## 1. ScrollIntoView()
