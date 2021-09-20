@@ -93,9 +93,9 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 
 ## 3.Filter project
 ### Function
-- when click category btn, they are filtered.
-- make data information in html and filter.
-- add 'selected' class current target button, and remove previous one
+- when click category button, they are filtered.
+- make data information in html.
+- data-filter & date-type
 
 <img width="965" alt="스크린샷 2021-09-20 오후 4 14 43" src="https://user-images.githubusercontent.com/80943394/133968989-aad9215f-0033-4b4b-a6d3-7a8f94b8a294.png">
 
