@@ -64,14 +64,11 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - since we made sections and navbar menu through sectionIds,
 - so we can find current element through 'entry.target.id' of sectionIds 
 - they have same index.(map API)
-<br>
+
 
 ### selectNavItem
-- be active current navbar menu item and remove active class to the previous one seleted.
-- so we sholud remember previous one make new variable.
-- this is a function I mentioned before.
-- we can use this function very useful.
-- for navbar menu,contact,arrow-up, and scroll event
+- make current navbar menu item  to be active and remove it to the previous one.
+- so we should remember previous one by making new variable.
 
 ### bug💥
 - As soon as the page loaded 'testimonial' navbar menu items was selected.
