@@ -20,9 +20,8 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 - add data-link="id" info in each of navbar menu items which is correspond 'id' of sections in html
 - then make function scrollIntoview()
 ### bug💥
-- when evoke scrollIntoView event to contactMe button & arrow-up button, navbar menu items wasn't able to be active correctly.
-- (I added selctNavItem(target) only for navbar menu click event but not for contactME & arrow up button😩)
-- so I added function 'selectNavItem()' which is made from 'IntersectionObserver' into function scrollIntoview() so that it works in 'function scrollIntoview' at once.
+- when click contactMe & arrow-up button, I found out navbar menu items wasn't able to be active.
+- so I added function 'selectNavItem()' into function scrollIntoview() so that it works at once when scrollIntoview event.
 
 <img width="569" alt="스크린샷 2021-09-19 오후 8 11 21" src="https://user-images.githubusercontent.com/80943394/133925402-5f4482af-b172-490a-a36b-d95a4fbbaae5.png">
 
