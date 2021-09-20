@@ -55,7 +55,7 @@ https://user-images.githubusercontent.com/80943394/133916876-dfd19ef7-c325-4815-
 
 ### 2.make Intersection Observer
 - Intersection observer parameter : callback,options
-- when intersection observer observe sections, I send callback to be active menu items
+- when intersection observer observe sections, I can call 'callback' to be active navbar menu items
 - those are possible using entry information.
 <br>
 
