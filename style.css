@@ -20,7 +20,7 @@
     --font-medium: 25px;
     --font-regular: 18px;
     --font-small: 16px;
-    --font-micro: 14px;
+    --font-micro: 10px;
 
     /* Font weight */
     --weight-bold: 700;
@@ -233,6 +233,30 @@ p {
 .major__description {
     font-size: var(--font-small);
 }
+
+.about__careers {
+    display: flex;
+    flex-direction: column;
+}
+
+.univ,
+.job {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.univ__description,
+.job__description{
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+    text-align: left;
+    color: var(--color-light-grey);
+    font-size: var(--font-micro);
+}
+
+
 
 /* Skill */
 #skill {
