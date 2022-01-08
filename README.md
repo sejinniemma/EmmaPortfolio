@@ -56,8 +56,7 @@ https://user-images.githubusercontent.com/80943394/133980158-72c5630d-6203-416c-
 <img width="930" alt="스크린샷 2021-09-19 오후 8 38 50" src="https://user-images.githubusercontent.com/80943394/133926369-093c7645-ada5-4a40-9a82-0c7dcdd3b9e4.png">
 
 ### 2.make Intersection Observer
-- Intersection observer parameter : callback,options
-- when intersection observer observe sections, I can call 'callback' to be active navbar menu items
+- when intersection observer observe sections, I can call 'callback' which is to active navbar menu items
 - those are possible using entry information.
 <br>
 
