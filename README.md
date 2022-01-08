@@ -83,9 +83,9 @@ https://user-images.githubusercontent.com/80943394/133980158-72c5630d-6203-416c-
 
 ### bug💥
 ### 1).wheel event
-- scroll event is working when scrolling.
-- It means when we click navbar menu,there is 'scrollIntoview events',so scroll event is also working.
-- To avoid this situation, I used 'wheel' event instead of using scroll event.
+- scroll event is working whenever scrolling.
+- It means when we click navbar menu,there is also 'scrollIntoview events',so scroll event occur consistantly.
+- To avoid this situation, I used 'wheel' event instead of using 'scroll'.
 - 'wheel' is only working when person make scroll with mouse.
 
 ### 2).when window size is different
