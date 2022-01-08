@@ -68,8 +68,8 @@ https://user-images.githubusercontent.com/80943394/133980158-72c5630d-6203-416c-
 
 
 ### selectNavItem
-- make current navbar menu item  to be active and remove it to the previous one.
-- so we should remember previous one by making new variable.
+- make current navbar menu item  to be active and remove it.
+- navSelecteItems : so we should remember previous one by making new variable.
 
 ### bug💥
 - As soon as the page loaded 'testimonial' navbar menu item was selected.
