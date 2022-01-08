@@ -44,10 +44,8 @@ https://user-images.githubusercontent.com/80943394/133980158-72c5630d-6203-416c-
 
 ### ex) Bad performence without intersection observer❌ 💩
 
-<img width="1320" alt="스크린샷 2021-09-19 오후 7 26 06" src="https://user-images.githubusercontent.com/80943394/133924063-70f66e0f-88fd-4bd7-91ad-54a3c200af87.png">
-
 1. getboundingClientRect() generate layout even whenver scroll events (too bad)
-2. we should avoid heavy things in callback function because we can't do anything until callback is finished.
+2. we should avoid heavy works in callback function because we can't do anything until callback is finished.
 3. scroll event generate so frequently.Instead we make layout in the for loop whenever scroll events,I prefer using Intersection Observer API👓
 
 ## Let's use Intersection Observer 🧬
