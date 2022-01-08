@@ -100,9 +100,9 @@ https://user-images.githubusercontent.com/80943394/133980158-72c5630d-6203-416c-
 <img width="965" alt="스크린샷 2021-09-20 오후 4 14 43" src="https://user-images.githubusercontent.com/80943394/133968989-aad9215f-0033-4b4b-a6d3-7a8f94b8a294.png">
 
 ### bug💥
-- when click 'category__count' they don't work since category count has no data information
+- when click 'category__count' projects are not filtered because category count has no data information.
 - when debug category__count, It is undifined.
-- we can solve this problem through their parentNode
+- we can solve this problem using their parentNode data information.
 
 <img width="1206" alt="스크린샷 2021-09-20 오후 4 54 42" src="https://user-images.githubusercontent.com/80943394/133971619-01541216-c7cf-48f3-a1f4-b91053758bd4.png">
 
