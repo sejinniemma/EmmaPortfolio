@@ -38,7 +38,7 @@ https://user-images.githubusercontent.com/80943394/133980158-72c5630d-6203-416c-
 
 ## 2.Intersection Observer 🌈⭐️
 ### Function
-- when scrolling window, navbar memu items to be active by noticing some inersection change using 'Intersection observer API'
+- when scrolling the document, navbar memu items to be active by observing some inersection change using 'Intersection observer API'
 - For more great performence I used Intersection observer API
 <br>
 
