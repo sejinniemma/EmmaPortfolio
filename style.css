@@ -229,26 +229,27 @@ p {
   font-size: var(--font-small);
 }
 
-.about__careers {
+.about__university,
+.about__college {
   display: flex;
   flex-direction: column;
 }
 
 .univ,
-.job {
+.tamwood {
   display: flex;
   margin-bottom: 16px;
   align-items: center;
 }
 
 .univ__description,
-.job__description {
+.college__description {
   display: flex;
   flex-direction: column;
   margin: 0 16px;
   text-align: left;
   color: var(--color-light-grey);
-  font-size: var(--font-micro);
+  font-size: var(--font-small);
 }
 
 /* Skill */
