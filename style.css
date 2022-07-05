@@ -67,7 +67,10 @@ h1 {
   font-weight: var(--weight-bold);
   color: var(--color-black);
   margin: 16px 0px;
+
 }
+
+
 
 h2 {
   font-size: var(--font-medium);
@@ -105,7 +108,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-pink);
+  background-color: var(--color-orange);
   padding: 8px;
 }
 
@@ -147,16 +150,39 @@ p {
 
 /* Home */
 #home {
-  background: url(imgs/homebackground.png) center/cover no-repeat;
+  background-color: #bdbdbd;
+  /* url(imgs/homebackground.png) center/cover no-repeat; */
   padding: 40px;
-  padding-top: 120px;
+  padding-top: 140px;
+  padding-bottom: 150px;
   text-align: center;
   color: var(--color-white);
+}
+.custom-shape-divider-top-1656989245 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1656989245 svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 275px;
+}
+.home__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .home__avatar {
   width: 350px;
-  height: 350px;
+  height: 500px;
+  margin-top: 60px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
 }
@@ -164,6 +190,35 @@ p {
 .home__title,
 .home__description {
   color: var(--color-white);
+  right: 200px;;
+
+}
+
+.developer {
+  font-size: 100px;
+  animation: slide 1s ease-out;
+  position: absolute;
+  top: 300px;
+ right: 200px;
+ padding-top: 10px;
+
+}
+@keyframes slide {
+  from{
+    right: 50px;
+    opacity: 0;
+  } 
+  to {
+    right: 200px;
+    opacity: 1;
+  }
+}
+.js {
+  font-size: 100px;
+  color:gold;
+  position: absolute;
+  right: 70px;
+  animation: slide 1s ease-out;
 }
 
 .home__contact {
@@ -172,6 +227,8 @@ p {
   margin: 24px;
   padding: 8px 12px;
   color: var(--color-white);
+  background: rgb(254,145,141);
+background: linear-gradient(90deg, rgba(254,145,141,0.6937368697478992) 20%, rgba(254,181,70,1) 93%);
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
@@ -256,6 +313,10 @@ p {
 #skill {
   background-color: var(--color-yellow);
 }
+
+
+
+
 
 .skillset {
   display: flex;
@@ -466,7 +527,7 @@ p {
 /* Contact */
 
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-orange);
 }
 
 .contact__title,
@@ -500,7 +561,7 @@ p {
   width: 70px;
   height: 70px;
   font-size: 50px;
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-orange);
   color: var(--color-white);
   border-radius: 50%;
   opacity: 0;
