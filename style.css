@@ -191,18 +191,26 @@ p {
 .home__title,
 .home__description {
   color: var(--color-white);
-  right: 200px;;
+  right: 200px;
 
 }
 
+
 .developer {
+  display: flex;
+flex-direction: column;
+align-items: center;
+line-height: 50%;
   font-size: 100px;
   animation: slide 1s ease-out;
   position: absolute;
   top: 300px;
  right: 200px;
  padding-top: 10px;
-margin-bottom: 40px;
+ padding-bottom: 40px;
+}
+.foundation{
+  margin-top: 100px;
 }
 
 @keyframes slide {
@@ -228,10 +236,11 @@ margin-bottom: 40px;
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   margin: 24px;
+  margin-top: 50px;
   padding: 8px 12px;
   color: var(--color-white);
   background: rgb(254,145,141);
-background: linear-gradient(90deg, rgba(254,145,141,0.6937368697478992) 20%, rgba(254,181,70,1) 93%);
+  background: linear-gradient(90deg, rgba(254,145,141,0.6937368697478992) 20%, rgba(254,181,70,1) 93%);
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
@@ -575,6 +584,28 @@ background: linear-gradient(90deg, rgba(254,145,141,0.6937368697478992) 20%, rgb
 .arrow-up.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+@media screen and (max-width: 950px){
+  .home__avatar{
+    width: 300px;
+    height: 400px;
+  }
+  .home__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 150px;
+  }
+  .developer {
+    font-size: 70px;
+    animation: none;
+    right: 50px;
+  }
+
+ .js,.foundation{
+    display: none;
+  }
 }
 
 /* For below 768px screen width */
