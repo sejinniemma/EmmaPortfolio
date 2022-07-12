@@ -180,8 +180,8 @@ p {
 }
 
 .home__avatar {
-  width: 420px;
-  height: 500px;
+  width: 350px;
+  height: 430px;
   margin-top: 60px;
   border-radius: 20%;
   border: 2px solid var(--color-light-white);
