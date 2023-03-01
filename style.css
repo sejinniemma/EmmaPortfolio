@@ -4,7 +4,7 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink:  #fe918d;
+  --color-pink: #fe918d;
   --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -40,7 +40,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   cursor: default;
 }
 
@@ -67,10 +67,7 @@ h1 {
   font-weight: var(--weight-bold);
   color: var(--color-black);
   margin: 16px 0px;
-
 }
-
-
 
 h2 {
   font-size: var(--font-medium);
@@ -185,39 +182,37 @@ p {
   margin-top: 60px;
   border-radius: 20%;
   border: 2px solid var(--color-light-white);
-  background-color:#dfe6d2
+  background-color: #dfe6d2;
 }
 
 .home__title,
 .home__description {
   color: var(--color-white);
   right: 200px;
-
 }
-
 
 .developer {
   display: flex;
-flex-direction: column;
-align-items: center;
-line-height: 50%;
+  flex-direction: column;
+  align-items: center;
+  line-height: 50%;
   font-size: 100px;
   animation: slide 1s ease-out;
   position: absolute;
   top: 300px;
- right: 200px;
- padding-top: 10px;
- padding-bottom: 40px;
+  right: 200px;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
-.foundation{
+.foundation {
   margin-top: 100px;
 }
 
 @keyframes slide {
-  from{
+  from {
     right: 50px;
     opacity: 0;
-  } 
+  }
   to {
     right: 200px;
     opacity: 1;
@@ -226,7 +221,7 @@ line-height: 50%;
 .js {
   font-size: 100px;
   font-weight: 600;
-  color:gold;
+  color: gold;
   position: absolute;
   right: 70px;
   animation: slide 1s ease-out;
@@ -239,8 +234,12 @@ line-height: 50%;
   margin-top: 50px;
   padding: 8px 12px;
   color: var(--color-white);
-  background: rgb(254,145,141);
-  background: linear-gradient(90deg, rgba(254,145,141,0.6937368697478992) 20%, rgba(254,181,70,1) 93%);
+  background: rgb(254, 145, 141);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 145, 141, 0.6937368697478992) 20%,
+    rgba(254, 181, 70, 1) 93%
+  );
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
@@ -264,10 +263,12 @@ line-height: 50%;
 /* About */
 .about__majors {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 80px 0;
 }
-
+.importantKey {
+  background-color: #fff7d1;
+}
 .major__icon {
   width: 170px;
   height: 170px;
@@ -280,11 +281,13 @@ line-height: 50%;
   margin-bottom: 16px;
 }
 
-.major__icon i {
+.major__icon i,
+.major__icon img {
   transition: all var(--animaiton-duration) ease-in;
 }
 
-.major__icon:hover i {
+.major__icon:hover i,
+.major__icon:hover img {
   color: var(--color-pink);
   transform: rotate(-30deg) scale(1.1);
 }
@@ -310,7 +313,12 @@ line-height: 50%;
   margin-bottom: 16px;
   align-items: center;
 }
-
+.where {
+  font-size: medium;
+  color: white;
+  background-color: #fe918d;
+  border-radius: 20%;
+}
 .univ__description,
 .college__description {
   display: flex;
@@ -325,10 +333,6 @@ line-height: 50%;
 #skill {
   background-color: var(--color-yellow);
 }
-
-
-
-
 
 .skillset {
   display: flex;
@@ -480,7 +484,7 @@ line-height: 50%;
 }
 
 .project__description h3::after {
-  content: "";
+  content: '';
   display: block;
   position: relative;
   left: 50%;
@@ -586,12 +590,12 @@ line-height: 50%;
   pointer-events: auto;
 }
 
-@media screen and (max-width: 950px){
-  .home__avatar{
+@media screen and (max-width: 950px) {
+  .home__avatar {
     width: 300px;
     height: 400px;
   }
-  .home__title{
+  .home__title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -603,7 +607,8 @@ line-height: 50%;
     right: 50px;
   }
 
- .js,.foundation{
+  .js,
+  .foundation {
     display: none;
   }
 }
@@ -625,15 +630,14 @@ line-height: 50%;
     right: 16px;
     font-size: var(--font-medium);
   }
-#home{
-  padding-top: 50px;
-  padding-bottom: 30px;
-}
+  #home {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 
-
- .custom-shape-divider-top-1656989245{
-  display: none;
- }
+  .custom-shape-divider-top-1656989245 {
+    display: none;
+  }
 
   #navbar {
     flex-direction: column;
@@ -665,13 +669,13 @@ line-height: 50%;
     padding-top: 50px;
   }
 
-  .home__avatar{
+  .home__avatar {
     width: 320px;
     height: 430px;
     border-radius: 40%;
     margin-bottom: 20px;
   }
-  .home__title{
+  .home__title {
     display: none;
   }
 
@@ -679,7 +683,7 @@ line-height: 50%;
     flex-direction: column;
   }
   .foundation {
-  display: none;
+    display: none;
   }
 
   .about__majors {
